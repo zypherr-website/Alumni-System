@@ -7,6 +7,6 @@
 </head>
 <body>
 	<h1>Welcome, ACT!</h1>
-	<a href="../../index.html">Logout</a>
+	<a href="../../../index.html">Logout</a>
 </body>
 </html>

@@ -32,20 +32,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect based on username
             switch ($username) {
                 case "ACT":
-                    header("Location: users/act/index.php");
+                    header("Location: users/citcs/act/index.php");
                     // header("Location: act_dashboard.php");
                     break;
                 case "Computer Science":
-                    header("Location: users/cs/index.php");
+                    header("Location: users/citcs/cs/index.php");
                     // header("Location: cs_dashboard.php");
                     break;
                 case "Information Technology":
-                    header("Location: users/it/index.php");
+                    header("Location: users/citcs/it/index.php");
                     // header("Location: it_dashboard.php");
                     break;
-                // case "Dean":
-                //     header("Location: dean_dashboard.php");
-                //     break;
+                case "Dean":
+                    header("Location: users/citcs/dean/index.php");
+                    break;
                 default:
                     header("Location: index.html"); // Default dashboard
                     break;
