@@ -1,0 +1,32 @@
+.main-content{
+	margin: auto;
+	left: 350px;
+	width: 50%;
+	height: 100%;
+}
+.sidebar.active + .main-content{
+	left: 350px;
+}
+.main-content h3{
+	font-size: 1.5rem;
+}
+.main-content .resume{
+	margin: auto;
+	background: #eee;
+	border-radius: 5px;
+	padding: 1rem 2rem;
+}
+.main-content .resume div{
+	margin-bottom: 2.5rem;
+}
+.main-content .resume .details, .main-content .resume .contact{
+	padding-bottom: 1.5rem;
+	border-bottom: 1.5px solid blue;
+}
+.main-content .resume img{
+	width: 8rem;
+	border-radius: 50%;
+}
+.main-content .resume .name{
+	text-align: center;
+}

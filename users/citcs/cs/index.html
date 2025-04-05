@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLMUN Alumni Portal: Alumni</title>
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+	<link rel="stylesheet" href="../../../css/dean_dashboard.css">
+	<link rel="stylesheet" href="../../../css/user_portal.css">
+</head>
+<body>
+	<!-- <header><h1>Welcome, Vhon Pogi</h1></header> -->
+	<main>
+		<div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+		<div class="sidebar">
+			<div class="burger-menu" onclick="toggleSidebar()">✖</div>
+			<div class="profile">
+				<img src="../../../img/alumni/cs/vhon pogi.jpg" alt="logo">
+	
+				<div>
+					<h2>Vhon M.</h2>
+				</div>
+			</div>
+			
+			<div class="menu-item">
+				<a href="./index.php" class="curr"><i class="ri-home-office-line"></i> Home</a>
+			</div>
+	
+			<div class="menu-item">
+				<a href="./index.php"><i class="ri-user-fill"></i> Profile</a>
+			</div>
+	
+			<div class="menu-item">
+				<a href="./index.php"><i class="ri-message-2-line"></i> Message</a>
+			</div>
+	
+			<div class="menu-item">
+				<a href="./index.php"><i class="ri-settings-2-line"></i> Settings</a>
+			</div>
+	
+			<div class="menu-item">
+				<a href="../../../index.php"><i class="ri-corner-down-right-line"></i> Logout</a>
+			</div>
+		</div>
+		
+		<div class="main-content">
+			<div class="resume">
+				<div class="name">
+					<img src="../../../img/alumni/cs/vhon pogi.jpg" alt="logo">
+					<h2>Vhon Mosquite</h2>
+				</div>
+				<div class="details">
+					<h3>Details</h3>
+					<p><b>Working Status</b>: Unemployed</p>
+					<p><b>Education</b>: BSCS</p>
+					<p><b>Year Graduated</b>: 2026</p>
+				</div>
+				<div class="contact">
+					<h3>Contacts</h3>
+					<p><b>Contact Number: </b>: 09696969690</p>
+					<p><b>Email Address</b>: vhonpogi_bscs@gmail.com</p>
+					<p><b>Address</b>: Phase-5 Sta. Maria Street Las Piñas</p>
+				</div>
+				<div class="personal-info">
+					<h3>Personal Information</h3>
+					<p><b>Age: </b>: 17</p>
+					<p><b>Gender</b>: M</p>
+					<p><b>Civil Status</b>: Married</p>
+				</div>
+			</div>
+		</div>
+	</main>
+		
+    <script>
+        function toggleDropdown() {
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+		function toggleSidebar() {
+			const sidebar = document.querySelector(".sidebar");
+			sidebar.classList.toggle("active");
+
+			// Toggle a class on the body
+			document.body.classList.toggle("body-sidebar-active");
+		}
+    </script>
+</body>
+</html>
